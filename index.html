@@ -6,11 +6,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Darya Dakuko</title>
     <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/styles/default.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
 </head>
 
 <body>
     <header>
-        <div class="img"><img src="./picture.jpg" alt="My photo" class="photo"></div>
+        <nav class="navigation">  
+        <a class="nav-a" href="#summary">Summary</a>
+        <a class="nav-a" href="#skills">Skills</a>
+         <a class="nav-a" href="#code-examples">Code examples</a>
+         <a class="nav-a" href="#strengths">Strengths</a>
+           
+        </nav>
+        <div class="img"><img src="picture.jpg" alt="My photo" class="photo"></div>
         <h1>Darya Dakuko</h1>
     </header>
         <div>
@@ -22,15 +32,21 @@
     </div>
     <main class="main">
     <div>
-        <section>
+        <section id="summary">
             <h2>Summary</h2>
-            <p>At that moment I really want to get a job in IT company. That is why my goal is to gain as much knowledge and programming experience as possible. I am a hardworking person, and I’ll do my best to reach this goal.</p>
+            <p>Unfortunately, I have no any experience in programming. At that moment I really want to get a job in IT company. That is why my goal is to gain as much knowledge and programming experience as possible. I am a hardworking person, and I’ll do my best to reach this goal.</p>
         </section>
     </div>
 
-    <section>
+    <section id="skills">
         <div class="skills-raw">
         <h2>Skills</h2>
+        <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>Photoshop</li>
+            <li>Figma</li>
+        </ul>
             <h3>Languages:</h3>
         <ul>
             <li>Russian</li>
@@ -40,7 +56,7 @@
     <div>
        <h3>Education:</h3>
         <ul>
-            <li>Belarussian State Economic University, Economic cybernetics, Bachelor 2004-2009</li>
+            <li>Belarussian State Economic University, Economic cybernetics</li>
         </ul>
     </div>
     <div>
@@ -50,9 +66,18 @@
         </ul>
     </div>
     </section>
+    <section id="code-examples">
+        <h2>Code examples</h2>
+        <pre><code>
+            function reverse (n) {
+            let result = Math.abs(n).toString().split("");
+            return result.reverse().join("");
+            }
+        </code></pre>
+    </section>
     <div>
-    <section>
-        <h2>Strength</h2>
+    <section id="strengths">
+        <h2>Strengths</h2>
         <ul>
             <li>Communication Skills</li>
             <li>Flexibility</li>
@@ -62,20 +87,20 @@
     </section>
 </div>
 </main>
+</body>
 <footer>
     <div class="block">
         <span>Minsk, 2021</span>
     </div>
     <div class="block">
     <a href="https://rs.school/js/" target="_blank" rel="noopener noreferrer">
-        <img src="./rs_school_js.svg" alt="rs_school" class="logo">
+        <img src="rs_school_js.svg" alt="rs_school" class="logo">
     </a>
 </div>
 <div class="block">
-    <a href="https://github.com/DaryaDak" target="_blank" rel="noopener noreferrer"> <img src="./github.png" alt="GitHub" class="logo-git">
+    <a href="https://github.com/DaryaDak" target="_blank" rel="noopener noreferrer"> <img src="github.png" alt="GitHub" class="logo-git">
     </a>
  
     </div>
 </footer>
-</body>
 </html>
