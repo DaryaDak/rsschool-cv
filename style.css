@@ -111,3 +111,8 @@ li {
 .block {
     margin: 0 30px;
 }
+
+.score {
+    width: 80%;
+    height: auto;
+}
