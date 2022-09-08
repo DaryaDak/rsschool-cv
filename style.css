@@ -16,7 +16,6 @@ header {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    
 }
 
 .nav-a {
@@ -30,6 +29,7 @@ a {
     color: rgb(15, 114, 160);
     font-weight: bold;
 }
+
 body {
     max-width: 1020px;
     margin: 0 auto;
@@ -70,12 +70,12 @@ h3 {
 li {
     line-height: 2;
     margin-left: 40px;
-  }
+}
 
-  p {
-      padding: 0;
-      margin: 0 20px 0 40px;
-  }
+ p {
+     padding: 0;
+     margin: 0 20px 0 40px;
+ }
 
 .video {
     margin: 0 auto;
@@ -84,11 +84,11 @@ li {
     margin: 15px 0;
 }
 
-  code {
-      font-size: 14px;
-  }
+ code {
+    font-size: 14px;
+ }
 
-  footer {
+ footer {
     background-color: rgb(15, 114, 160);
     border-top-left-radius: 25%;
     border-top-right-radius: 25%;
@@ -96,6 +96,7 @@ li {
     justify-content: center;
     align-items: center;
 }
+
 .logo {
     height: 80px;
     width: 80px;
