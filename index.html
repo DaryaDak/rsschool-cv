@@ -15,9 +15,9 @@
         <nav class="navigation">  
             <a class="nav-a" href="#summary">About myself</a>
             <a class="nav-a" href="#skills">Skills</a>
-            <a class="nav-a" href="#code-examples">Code examples</a>
+            <a class="nav-a" href="#code-examples">Code example</a>
             <a class="nav-a" href="#projects">Projects</a>
-            <a class="nav-a" href="#strengths">Strengths</a>
+            <a class="nav-a" href="#strengths">Soft skills</a>
         </nav>
     </header>
     <main class="main">
@@ -90,42 +90,58 @@
             <h2 class="h2">Languages:</h2>
             <div class="line"></div>
             <ul>
-                <li>Russian</li>
-                <li>English (B1)</li>
+                <li class="lang-li">Russian - native</li>
+                <li  class="lang-li">English - B1</li>
                 <img class="score" src = "./assets/english-score.png" alt="English Score">
             </ul>
         </section>
     <section id="code-examples">
-        <h2 class="h2">Code examples</h2>
+        <h2 class="h2">Code example</h2>
         <div class="line"></div>
-        <pre><code>
+        <pre>
+            <code>
             function reverse (n) {
             let result = Math.abs(n).toString().split("");
             return result.reverse().join("");
             }
-        </code></pre>
+            </code>
+        </pre>
     </section>
     <section id="projects">
-        <div>
         <h2 class="h2">Projects</h2>
         <div class="line"></div>
-        <ul>
-            <li><a class="projects-link" href="https://rolling-scopes-school.github.io/daryadak-JSFE2021Q3/momentum/" target="_blank" rel="noopener noreferrer">Momentum</a></li>
-            <li><a class="projects-link" href="https://daryadak.github.io/cssMemSlider/" target="_blank" rel="noopener noreferrer">CSS Mem Slider</a></li>
-        </ul>
+        <div class="projects">
+            <div class="item">
+                <h3 class="projects-h3">Portfolio landing page</h3>
+                <a class="projects-link" href="https://rolling-scopes-school.github.io/daryadak-JSFEPRESCHOOL/portfolio/" target="_blank" rel="noopener noreferrer">
+                    <img src="./assets/portfolio.png" alt="Project image" class="project-item">
+                </a>
+            </div>
+            <div class="item">
+                <h3 class="projects-h3">Momentum</h3>
+                <a class="projects-link" href="https://rolling-scopes-school.github.io/daryadak-JSFE2021Q3/momentum/" target="_blank" rel="noopener noreferrer">
+                    <img src="./assets/momentum.png" alt="Project image" class="project-item">
+                </a>
+            </div>
+            <div class="item">
+                <h3 class="projects-h3">CSS Mem Slider</h3>
+                <a class="projects-link" href="https://daryadak.github.io/cssMemSlider/" target="_blank" rel="noopener noreferrer">
+                    <img src="./assets/slider.png" alt="Project image" class="project-item">
+                </a>
+            </div>
         </div>
-        </section>
+    </section>
     <section id="strengths">
-       <div>
-        <h2 class="h2">Strengths</h2>
+        <h2 class="h2">Soft skills</h2>
         <div class="line"></div>
         <ul>
-            <li>Communication Skills</li>
-            <li>Flexibility</li>
-            <li>Quick Learner</li>
-            <li>Team Oriented</li>
+            <li class="strengths-li">Communication Skills</li>
+            <li class="strengths-li">Flexibility</li>
+            <li class="strengths-li">Quick Learner</li>
+            <li class="strengths-li">Team Oriented</li>
+            <li class="strengths-li">Business writing skills</li>
+            <li class="strengths-li">Hardworking, well-adapting person</li>
         </ul>
-      </div>
     </section>
 </div>
 </main>
