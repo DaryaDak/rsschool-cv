@@ -18,6 +18,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    font-size: 16px;
 }
 
 a {
@@ -30,6 +31,9 @@ a:hover {
     color: var(--color-green);
     text-decoration: underline;
     transition: 1s;
+}
+section {
+    padding-bottom: 20px;
 }
 
 .header {
@@ -48,7 +52,7 @@ a:hover {
 
 .nav-a {
     color: var(--color-primary);
-    font-size: 20px;
+    text-transform: uppercase;
     text-decoration: none;
 }
 
@@ -79,7 +83,7 @@ a:hover {
     width: calc(100% - 150px);
     height: 3px;
     background-color: var(--color-primary);
-    margin-bottom: 10px;
+    margin-bottom: 12px;
 }
 
 .contacts-li {
@@ -121,7 +125,7 @@ a:hover {
 .h2 {
     color:var(--color-primary);
     padding-top: 20px;
-    padding-bottom: 5px;
+    padding-bottom: 2px;
     text-transform: uppercase;
 }
 
@@ -130,21 +134,29 @@ h3 {
 }
 
 .skills-li {
-    list-style: none;
+    list-style: circle;
     line-height: 27px;
+    margin-left: 20px;
 }
 
 .edu-li {
     list-style: none;
     font-weight: 700;
     padding-bottom: 7px;
-    padding-top: 10px;
+    padding-top: 7px;
+}
+
+.edu-li::before {
+    content: '✓';
+    color: var(--color-green);
+    padding-right: 5px;
 }
 
 .sub-edu-li {
     list-style: circle;
     margin-left: 30px;
     cursor: pointer;
+    line-height: 25px;
 }
 
 .sub-edu-li:hover {
@@ -160,12 +172,14 @@ h3 {
 .strengths-li {
     list-style: circle;
     margin-left: 20px;
+    padding-bottom: 10px;
 }
 
 .projects {
     display: flex;
     flex-direction: column;
     gap: 15px;
+    padding-bottom: 40px;
 }
 
 .item {
@@ -210,16 +224,16 @@ h3 {
     border: 0px;
 } */
 
-  code {
-      font-size: 14px;
-  }
-
-  footer {
+.footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
     height: 10vh;
+    background-color: var(--color-green);
+    color: #fff;
+    border-radius: 25% 25% 0 0;
 }
+
 .logo {
     height: 80px;
     width: 80px;
@@ -228,6 +242,7 @@ h3 {
 .logo-git {
     height: 50px;
     width: 50px;
+    border-radius: 50%;
 }
 
 .block {
@@ -240,6 +255,7 @@ h3 {
     display: block;
     cursor: pointer;
 }
+
 .score:hover {
     width: 70%;
     transition: 1s;
