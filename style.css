@@ -19,6 +19,9 @@ body {
     flex-direction: column;
     justify-content: space-between;
     font-size: 16px;
+    background-image: url(./assets/beige.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
 }
 
 a {
@@ -48,6 +51,7 @@ section {
 .navigation {
     display: flex;
     column-gap: 55px;
+    flex-wrap: wrap;
 }
 
 .nav-a {
@@ -76,7 +80,8 @@ section {
 .photo {
     height: 100%;
     width: 100%;
-    border-radius: 25px;
+    border-radius: 50%;
+    margin-top: -35px;
 }
 
 .line {
@@ -91,6 +96,7 @@ section {
     display: flex;
     flex-direction: row;
     align-items: center;
+    flex-wrap: wrap;
     column-gap: 10px;
     list-style: none;
   }
@@ -103,13 +109,12 @@ section {
 
 .right-block {
     width: 70%;
-    padding: 0 40px;
+    padding: 0 40px 0 60px;
 }
 
 .h1 {
     color:var(--color-green);
-    text-align: center;
-    font-size: 42px;
+    font-size: 50px;
     text-transform: uppercase;
     padding-bottom: 20px;
     margin-top: 60px;
@@ -118,7 +123,6 @@ section {
 .h3-top {
     text-transform: uppercase;
     color:var(--color-green);
-    text-align: center;
     margin-bottom: 120px;
 }
 
@@ -129,8 +133,8 @@ section {
     text-transform: uppercase;
 }
 
-h3 {
-    color: rgb(0, 0, 3);
+.about {
+    line-height: 25px;
 }
 
 .skills-li {
@@ -151,6 +155,19 @@ h3 {
     color: var(--color-green);
     padding-right: 5px;
 }
+
+.experience-li {
+    list-style: none;
+    padding-bottom: 7px;
+    padding-top: 7px; 
+}
+
+.experience-li::before {
+    content: '✓';
+    color: var(--color-green);
+    padding-right: 5px;
+}
+
 
 .sub-edu-li {
     list-style: circle;
@@ -177,26 +194,28 @@ h3 {
 
 .projects {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    justify-content: space-between;
     gap: 15px;
     padding-bottom: 40px;
+    flex-wrap: wrap;
 }
 
 .item {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     gap: 15px;
     align-items: center;
     justify-content: space-between;
-    width: 100%;
+    width: 45%;
     padding: 15px;
     border: 1px solid var(--color-green);
     border-radius: 25px;
 }
 
 .project-item {
-    width: 350px;
-    height: 220px;
+    width: 100%;
+    height: 240px;
 }
 
 .project-item:hover {
@@ -207,22 +226,7 @@ h3 {
 .projects-h3 {
     text-transform: uppercase;
     font-weight: normal;
-    padding-left: 50px;
 }
-  /* p {
-      padding: 0;
-      margin: 0 20px 0 40px;
-  } */
-
-/* .video {
-    display: flex;
-    width: 100%;
-    justify-content: center;
-    margin-top: 20px;
-    margin-left: auto;
-    margin-right: auto;
-    border: 0px;
-} */
 
 .footer {
     display: flex;
@@ -232,6 +236,10 @@ h3 {
     background-color: var(--color-green);
     color: #fff;
     border-radius: 25% 25% 0 0;
+}
+
+code {
+    border-radius: 25px;
 }
 
 .logo {
