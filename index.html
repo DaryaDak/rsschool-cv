@@ -10,20 +10,29 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/highlight.min.js"></script>
 <script>hljs.initHighlightingOnLoad();</script>
 </head>
-<body>
+<body class="body">
     <header class="header">
+        <div class="hamburger">
+            <div class="line-burger line1"></div>
+            <div class="line-burger line2"></div>
+            <div class="line-burger line3"></div>
+        </div>
         <nav class="navigation">  
-            <a class="nav-a" href="#summary">About</a>
-            <a class="nav-a" href="#contacts">Contacts</a>
-            <a class="nav-a" href="#education">Education</a>
-            <a class="nav-a" href="#skills">Skills</a>
-            <a class="nav-a" href="#code-examples">Code example</a>
-            <a class="nav-a" href="#projects">Projects</a>
+            <div class="nav-list">
+                <a class="nav-a" href="#summary">About</a>
+                <a class="nav-a" href="#contacts">Contacts</a>
+                <a class="nav-a" href="#education">Education</a>
+                <a class="nav-a" href="#skills">Skills</a>
+                <a class="nav-a" href="#code-examples">Code example</a>
+                <a class="nav-a" href="#projects">Projects</a>
+            </div>
         </nav>
     </header>
     <main class="main">
         <aside class="left-block">
             <img src="./assets/myImg.jpg" alt="My photo" class="photo">
+            <h1 class="h1">Darya Dakuko</h1>
+            <div class="h3-top">Junior Front-end Developer</div>
             <section id="contacts">
             <div>
                 <h2 class="h2">Contacts</h2>
@@ -82,7 +91,7 @@
                 </ul>
                 </div>
             </section>
-            <div>
+            <div class="soft-skills">
                 <h2 class="h2">Soft skills</h2>
                 <div class="line"></div>
                 <ul class="strengths-ul">
@@ -96,8 +105,6 @@
             </div>
         </aside>
     <div class="right-block">
-        <h1 class="h1">Darya Dakuko</h1>
-        <div class="h3-top">Junior Front-end Developer</div>
         <section id="summary">
             <h2 class="h2">About myself</h2>
             <div class="line"></div>
@@ -182,5 +189,6 @@
     </a>
     </div>
 </footer>
+    <script type="module" src="./index.js"></script>
     </body>
 </html>
