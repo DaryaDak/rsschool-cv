@@ -193,10 +193,15 @@ section {
     margin-left: 30px;
     cursor: pointer;
     line-height: 25px;
+    color: var(--color-green);
 }
 
 .sub-edu-li:hover {
-    color: var(--color-green);
+    color: var(--color-primary);
+}
+
+.sub-edu-a {
+    text-decoration: underline;
 }
 
 .lang-li {
